@@ -4,8 +4,8 @@ import { CORE_CONCEPTS } from './data.js';
 import { CoreConcept } from '@/components';
 import { TabButton } from '@/components';
 function App() {
-  const onHandleClick = () => {
-    console.log('Event On - selected');
+  const onHandleClick = (selectedButton) => {
+    console.log(selectedButton);
   };
   return (
     <div>
@@ -27,10 +27,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={onHandleClick}>Components</TabButton>
-            <TabButton onSelect={onHandleClick}>JSX</TabButton>
-            <TabButton onSelect={onHandleClick}>Props</TabButton>
-            <TabButton onSelect={onHandleClick}>State</TabButton>
+            <TabButton onSelect={() => onHandleClick('components')}>Components</TabButton>
+            <TabButton onSelect={() => onHandleClick('jsx')}>JSX</TabButton>
+            <TabButton onSelect={() => onHandleClick('Props')}>Props</TabButton>
+            <TabButton onSelect={() => onHandleClick('State')}>State</TabButton>
           </menu>
         </section>
       </main>
