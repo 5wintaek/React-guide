@@ -1,11 +1,7 @@
-export const TabButton = ({ children }) => {
-  const onHandleClick = () => {
-    console.log('Event On');
-  };
-
+export const TabButton = ({ children, onSelect }) => {
   return (
     <li>
-      <button onClick={onHandleClick}>{children}</button>
+      <button onClick={onSelect}>{children}</button>
     </li>
   );
 };
