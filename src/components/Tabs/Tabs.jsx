@@ -2,7 +2,7 @@
 // children 은 버튼을 눌렀을 떄 보이는 컴포넌트 (tabcontent를 받고있음)
 // buttonContainer 는 Examples.jsx에 있는 내장요소를 따라감
 
-export const Tabs = ({ children, buttons, ButtonContainer }) => {
+export const Tabs = ({ children, buttons, ButtonContainer = 'menu' }) => {
   return (
     <>
       <ButtonContainer>{buttons}</ButtonContainer>
