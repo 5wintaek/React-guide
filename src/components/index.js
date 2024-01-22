@@ -4,3 +4,4 @@ export * from './TabButton/TabButton';
 export * from './CoreConcepts/CoreConcepts';
 export * from './Examples/Examples';
 export * from './Section/Section';
+export * from './Tabs/Tabs';
